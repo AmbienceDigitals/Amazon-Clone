@@ -1,0 +1,71 @@
+<div class="header">
+  <nav class="header_top">
+    <div class="header_menu">
+      
+      <div class="header_menu_icon">
+        <fa-icon [icon] = bars mat-button [matMenuTriggerFor]="mobile"></fa-icon>
+        <div>
+          <mat-menu #mobile="matMenu">
+            <button mat-menu-item>
+              <span routerLink="">Home</span>
+            </button>
+            <button mat-menu-item>
+              <span *ngIf="auth.isLoggedIn()" (click) = "signOut()">Hello, {{auth.getUser()}}</span>
+              <span routerLink = "login" *ngIf="!auth.isLoggedIn()">Hello, Sign In</span>
+            </button>
+            <button mat-menu-item>
+              <span>Accounts & Lists</span>
+            </button>
+            <button mat-menu-item>
+              <span routerLink="login">Returns</span>
+            </button>
+            <button mat-menu-item>
+              <span routerLink="login">Orders</span>
+            </button>
+            <div class="menu_cart" mat-menu-item>
+              <fa-icon [icon] = cart routerLink = "checkout"></fa-icon>
+              <p class="cart_number">{{shoppingCart.getCartLength()}}</p>
+            </div>
+          </mat-menu>
+        </div>
+        
+        <fa-icon [icon] = bars></fa-icon>
+      </div>
+      <img src="../assets/Images/amazon_2.png" alt="amazon logo" class="header_menu_logo" routerLink = "">
+    
+      <div class="header_menu_searchbar">
+      <input type="text" class="header_menu_input">
+      <div class="header_menu_searchbar_icon">
+        <fa-icon [icon] = searchIcon></fa-icon>
+      </div>
+
+    </div>
+
+    <div class="header_menu_signin">
+      <span class="header_menu_top_item" *ngIf="auth.isLoggedIn()" (click) = "signOut()">Hello, {{auth.getUser()}}</span>
+      <span class="header_menu_top_item" routerLink = "login" *ngIf="!auth.isLoggedIn()">Hello, Sign In</span>
+      <span class="header_menu_bottom_item">Accounts & Lists</span>
+    </div>
+
+    <div class="header_menu_signin" routerLink = "login">
+      <span class="header_menu_top_item">Returns</span>
+      <span class="header_menu_bottom_item">& Orders</span>
+    </div>
+
+    <div class="header_menu_cart">
+      <fa-icon [icon] = cart routerLink = "checkout"></fa-icon>
+      <p class="header_cart_number">{{shoppingCart.getCartLength()}}</p>
+    </div>
+
+    </div>
+  </nav>
+
+  <nav class="header_bottom">
+    <div class="header_bottom_location_text">
+      <span class="header_left_line_one">Delivery to</span>
+      <span class="header_left_line_two"> <strong> Canada</strong> </span>
+    </div>
+  </nav>
+  
+
+</div>

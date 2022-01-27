@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Male Back pack",
+        "desc": "Comfy male back pack made of durable leather",
+        "price": 50,
+        "image": "backpackMan.png",
+        "ratings": 4
+    },
+
+    {
+        "id": 2,
+        "title": "Female Back pack",
+        "desc": "Comfy female back pack made of durable leather",
+        "price": 50,
+        "image": "backpackWoman.png",
+        "ratings": 4.2
+    },
+
+    {
+        "id": 3,
+        "title": "Headset",
+        "desc": "Comfy headset with great sound production and bass equalizer",
+        "price": 100,
+        "image": "feature1.png",
+        "ratings": 5
+    },
+
+    {
+        "id": 4,
+        "title": "BLuetooth Speaker",
+        "desc": "clear sounds with great equalizer and a connection length of 30 feet",
+        "price": 50,
+        "image": "feature2.png",
+        "ratings": 4.5
+    },
+
+    {
+        "id": 5,
+        "title": "Bluetooth Earpiece",
+        "desc": "clear sounds with great equalizer and a connection length of 30 feet",
+        "price": 30,
+        "image": "feature3.png",
+        "ratings": 4.3
+    },
+
+    {
+        "id": 6,
+        "title": "Wristwatch",
+        "desc": "pure leather straps with heart beat detector",
+        "price": 150,
+        "image": "feature4.png",
+        "ratings": 5
+    },
+
+    {
+        "id": 7,
+        "title": "Male Purse",
+        "desc": "Comfy male purse made of durable leather",
+        "price": 150,
+        "image": "new5.png",
+        "ratings": 4.5
+    },
+
+    {
+        "id": 8,
+        "title": "Female Wristwatch",
+        "desc": "pure leather straps with heart beat detector and an auto notification build",
+        "price": 100,
+        "image": "new4.png",
+        "ratings": 5
+    },
+
+    {
+        "id": 9,
+        "title": "Female Purse",
+        "desc": "Comfy female purse made of durable leather",
+        "price": 150,
+        "image": "new2.png",
+        "ratings": 4.5
+    }
+]

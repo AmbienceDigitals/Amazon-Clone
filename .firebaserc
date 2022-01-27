@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "clone-14f1b": {
+      "hosting": {
+        "My-APP": [
+          "clone-14f1b"
+        ]
+      }
+    }
+  }
+}

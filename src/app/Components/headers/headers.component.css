@@ -1,0 +1,195 @@
+.header {
+    position: sticky; /* Making the header sticky */
+    z-index: 100;
+    top: 0;
+    width: 100%;
+} 
+
+.header_top {
+    height: 60px;
+    background-color: #0f1111;
+    font-size: 14px;
+    display: flex;
+    color: white; 
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+.header_menu {
+    display: flex;
+    padding: 10px 8px 8px 8px;
+    width: 100vw;
+}
+
+.header_menu > div {
+    margin: 8px;
+}
+
+.header_menu_icon > fa-icon {
+    display: none;
+}
+
+.header_menu_searchbar {
+    display: flex;
+    margin-top: 8px;
+    height: 40px;
+    justify-content: center;
+    flex: 1;
+}
+
+.header_menu_input {
+    height: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header_menu_searchbar_icon {
+    background-color: #febd69;
+    height: 40px;
+    width: 40px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_menu_logo {
+    object-fit: contain; /* helps make object remain formatted despite screen size */
+    width: 100px;
+    height: 50px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.header_menu_signin {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2em;
+    cursor: pointer;
+}
+
+.header_menu_top_item {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.header_menu_bottom_item {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.header_menu_cart {
+    margin-top: 10px;
+    margin-left: 8px;
+    height: 50px;
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-around;
+    cursor: pointer;
+}
+
+.header_cart_number {
+    color: #febd69;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: -8px;
+}
+
+.header_bottom{
+    height: 49px;
+    background-image: none;
+    background-color: #232f3e;
+    padding-left: 8px;
+    font-size: 12px;
+
+}
+.header_bottom_location_text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 648px) {
+    .header {
+        font-size: 10px;
+    }
+
+    .header_top {
+        padding: 0;
+    }
+
+    .header_menu_searchbar {
+        width: max-content;
+    }
+
+    .header_menu_icon {
+        margin-right: 20px;
+    }
+
+    .header_menu_icon > fa-icon {
+        font-size: 30px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: block;
+        align-items: center;
+    }
+
+    ::ng-deep .mat-menu-panel {
+        padding: 0 10px!important;
+        width: 100vw !important;
+        color: #febd69;
+      }
+    
+
+    .header_menu_logo,
+    .header_menu_signin,
+    .header_menu_cart {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobile_searchbar {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .searchbar_icon {
+        background-color: #febd69;
+        height: 45px;
+        width: 45px;
+        color: black;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .mobile_logo {
+        object-fit: contain; /* helps make object remain formatted despite screen size */
+        width: auto;
+        height: 50px;
+        margin: 0px 15px;
+        cursor: pointer;
+    }
+
+    .menu_cart {
+        margin-top: 10px;
+        margin-left: 8px;
+        display: flex;
+        align-content: center;
+        justify-content:flex-start;
+        cursor: pointer;
+    }
+
+    .menu_cart > fa-icon {
+        font-size: 25px;
+    }
+    
+    .cart_number {
+        color: #febd69;
+        font-size: 35px;
+        margin-top: -3px;
+        padding-left: 5px;
+    }
+}
